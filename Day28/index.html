@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <button class="btn-login">Đăng nhập</button>
+
+            <div class="content">
+                <div class="register">
+                    <div class="tab">
+                        <button class="tab-links btn-signin active">
+                            Đăng nhập
+                        </button>
+
+                        <button class="tab-links btn-signup">Đăng ký</button>
+                    </div>
+
+                    <div class="login">
+                        <p class="social-text">với các tài khoản mạng xã hội</p>
+
+                        <div class="social-login">
+                            <a href="#">
+                                <img
+                                    src="https://img.icons8.com/color/48/000000/google-logo.png"
+                                />
+                                Google
+                            </a>
+
+                            <a href="#">
+                                <img
+                                    src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                                />
+                                Facebook
+                            </a>
+                        </div>
+
+                        <p class="social-text">hoặc</p>
+
+                        <p class="alert-exist hide">
+                            Tài khoản không tồn tại, vui lòng kiểm tra lại
+                        </p>
+
+                        <form action="">
+                            <div class="form-group">
+                                <label for="email-signin">Email</label>
+                                <input
+                                    type="email"
+                                    id="email-signin"
+                                    class="email"
+                                    name="email"
+                                />
+
+                                <span class="small-text"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password-signin">Mật khẩu</label>
+
+                                <div class="password-wrapper">
+                                    <input
+                                        type="password"
+                                        id="password-signin"
+                                        class="password"
+                                        name="password"
+                                    />
+
+                                    <span class="show-password">
+                                        <img
+                                            src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png"
+                                        />
+                                    </span>
+                                </div>
+
+                                <span class="small-text"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit">Đăng nhập</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="signup hide">
+                        <p class="signup-text">
+                            Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+                        </p>
+
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name-signup">Họ và tên</label>
+                                <input
+                                    type="text"
+                                    id="name-signup"
+                                    class="name"
+                                    name="name"
+                                />
+
+                                <span class="small-text"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email-signup">Email</label>
+                                <input
+                                    type="email"
+                                    id="email-signup"
+                                    class="email"
+                                    name="email"
+                                />
+
+                                <span class="small-text"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password-signup">Mật khẩu</label>
+
+                                <div class="password-wrapper">
+                                    <input
+                                        type="password"
+                                        id="password-signup"
+                                        class="password"
+                                        name="password"
+                                    />
+
+                                    <span class="show-password">
+                                        <img
+                                            src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png"
+                                        />
+                                    </span>
+                                </div>
+
+                                <span class="small-text"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <p class="rules">
+                                    Bằng cách đăng ký tài khoản, bạn cũng đồng
+                                    thời chấp nhận mọi
+                                    <span class="highlight">
+                                        <a href="#">
+                                            điều kiện về quy định và chính sách
+                                            của Dân trí
+                                        </a>
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit">Đăng ký</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
