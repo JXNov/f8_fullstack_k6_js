@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list {
+    width: 500px;
+    background: #4286f4;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.list-item {
+    background: #8bb3f4;
+    border: 1px solid #fff;
+    margin: 1px 0;
+    padding: 0.5rem;
+    user-select: none;
+}
+
+.list-item.active {
+    background: #ff6f00;
+}
