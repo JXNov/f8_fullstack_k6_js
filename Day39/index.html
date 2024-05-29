@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smatyx Todos App</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+            integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Font Awesome CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container todo-app">
+            <h2 class="todo-header">
+                <span class="highlight">Smatyx</span> Todos App
+            </h2>
+
+            <div
+                class="d-flex justify-content-between align-items-center mb-3 gap-4"
+            >
+                <div class="input-group w-75">
+                    <input
+                        type="text"
+                        class="form-control py-3 search-todo"
+                        placeholder="Search Todos"
+                        aria-label="Search Todos"
+                    />
+
+                    <div class="input-group-text bg-white">
+                        <button
+                            class="btn-search-todo btn btn-primary"
+                            type="button"
+                        >
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button
+                    class="btn btn-success w-25"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addTodoModal"
+                >
+                    Add Todo
+                </button>
+            </div>
+
+            <ul class="list-group list-group-uncompleted p-0"></ul>
+
+            <div class="completed-todos mb-3">
+                <button class="btn btn-secondary">
+                    Completed Todos<span class="quantity">1</span>
+                    <i class="fa-regular fa-circle-right"></i>
+                </button>
+            </div>
+
+            <ul class="list-group list-group-completed p-0 d-none"></ul>
+
+            <!-- Add Todo Modal -->
+            <div
+                class="modal fade"
+                id="addTodoModal"
+                tabindex="-1"
+                aria-labelledby="addTodoModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form class="add-todo-form">
+                            <div class="modal-header">
+                                <input
+                                    type="text"
+                                    name="title"
+                                    class="form-control w-100 py-3"
+                                    placeholder="Add Todos"
+                                    required
+                                />
+                            </div>
+
+                            <div class="modal-body">
+                                <div
+                                    class="d-flex justify-content-center gap-4"
+                                >
+                                    <button
+                                        type="submit"
+                                        class="add-todo btn btn-success"
+                                    >
+                                        Save
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-light border border-1"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit Todo Modal -->
+            <div
+                class="modal fade"
+                id="editTodoModal"
+                tabindex="-1"
+                aria-labelledby="editTodoModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form class="edit-todo-form">
+                            <div class="modal-header">
+                                <input
+                                    type="text"
+                                    name="title"
+                                    class="form-control w-100 py-3"
+                                    placeholder="Edit Todos"
+                                    required
+                                />
+                            </div>
+
+                            <div class="modal-body">
+                                <div
+                                    class="d-flex justify-content-center gap-4"
+                                >
+                                    <button
+                                        type="submit"
+                                        class="edit-todo btn btn-success"
+                                    >
+                                        Save
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-light border border-1"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+            integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
