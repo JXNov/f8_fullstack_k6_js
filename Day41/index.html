@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <!-- <div class="quiz-start">
+                <button class="start">Start</button>
+                <div class="start-countdown hidden">
+                    <span class="countdown-time"></span>
+                </div>
+            </div> -->
+
+            <div class="quiz hidden">
+                <div class="quiz-header">
+                    <div class="quiz-countdown">
+                        <span class="countdown-bar"></span>
+                    </div>
+
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-left">
+                            <div class="quiz-step">
+                                <span class="current">1</span>
+                                /
+                                <span class="total">5</span>
+                            </div>
+
+                            <div class="quiz-streak">
+                                <span class="streak-info">Streak</span>
+
+                                <div class="streak-bar">
+                                    <span class="streak-progress"></span>
+                                </div>
+                            </div>
+
+                            <span class="score-bonus">+ 100</span>
+                        </div>
+
+                        <div class="quiz-progress-right">
+                            <div class="quiz-score">
+                                <span>Score: </span>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-body">
+                    <div class="quiz-question">
+                        <!-- <div class="question">
+                            <div class="question-title">
+                                <p class="question-text">
+                                    What is the capital of France?
+                                </p>
+                            </div>
+
+                            <div class="answer">
+                                <button>Paris</button>
+                                <button>London</button>
+                                <button>Berlin</button>
+                                <button>Madrid</button>
+                            </div>
+                        </div>
+
+                        <div class="question hidden">
+                            <div class="question-title">
+                                <p class="question-text">
+                                    What is the capital of Germany?
+                                </p>
+                            </div>
+
+                            <div class="answer">
+                                <button>Paris</button>
+                                <button>London</button>
+                                <button>Berlin</button>
+                                <button>Madrid</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="quiz-footer">
+                    <div class="quiz-footer-info">
+                        <p class="quiz-footer-info-item correct hidden">
+                            Correct
+                        </p>
+
+                        <p class="quiz-footer-info-item incorrect hidden">
+                            Incorrect
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-result hidden">
+                <div class="quiz-result-header">
+                    <span class="result-title">Quiz Completed</span>
+                </div>
+
+                <div class="quiz-result-body">
+                    <div class="result-score">
+                        <span class="result-score-title">Your Score</span>
+                        <span class="result-score-value">0</span>
+                    </div>
+
+                    <div class="result-streak">
+                        <span class="result-streak-title">Your Streak</span>
+                        <span class="result-streak-value">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
